@@ -1,0 +1,308 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.8.3"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.26.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +dev repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉koan-engine.runner꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉koan-engine.runner꞉> 
+; Syntax error compiling at (14_recursion.clj:23:1).
+; Unable to resolve symbol: defn in this context
+clj꞉koans.14-recursion꞉> 
+nil
+clj꞉koans.14-recursion꞉> 
+#'koans.14-recursion/factorial
+clj꞉koans.14-recursion꞉> 
+true
+clj꞉koans.14-recursion꞉> 
+true
+clj꞉koans.14-recursion꞉> 
+true
+clj꞉koans.14-recursion꞉> 
+true
+clj꞉koans.14-recursion꞉> 
+#function[koans.15-destructuring/eval6146/fn--6148]
+clj꞉koans.15-destructuring꞉> 
+nil
+clj꞉koans.15-destructuring꞉> 
+#'koans.15-destructuring/test-address
+clj꞉koans.15-destructuring꞉> 
+false
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:1:7892).
+; Can't take value of a macro: #'clojure.core/fn
+clj꞉koans.15-destructuring꞉> 
+#function[koans.15-destructuring/eval7903/fn--7905]
+clj꞉koans.15-destructuring꞉> 
+[:foo :bar]
+clj꞉koans.15-destructuring꞉> 
+":bar:foo"
+clj꞉koans.15-destructuring꞉> 
+false
+clj꞉koans.15-destructuring꞉> 
+":bar:foo"
+clj꞉koans.15-destructuring꞉> 
+true
+clj꞉koans.15-destructuring꞉> 
+"An Oxfor comma list of apples, oranges, andpears."
+clj꞉koans.15-destructuring꞉> 
+false
+clj꞉koans.15-destructuring꞉> 
+#function[clojure.core/str]
+clj꞉koans.15-destructuring꞉> 
+"An Oxford comma list of apples, oranges, and pears."
+clj꞉koans.15-destructuring꞉> 
+"An Oxfor comma list of apples, oranges, andpears."
+clj꞉koans.15-destructuring꞉> 
+"An Oxford comma list of apples, oranges, and pears."
+clj꞉koans.15-destructuring꞉> 
+false
+clj꞉koans.15-destructuring꞉> 
+"An Oxford comma list of apples, oranges, and pears."
+clj꞉koans.15-destructuring꞉> 
+"An OxforD comma list of apples, oranges, andpears."
+clj꞉koans.15-destructuring꞉> 
+false
+clj꞉koans.15-destructuring꞉> 
+"An Oxford comma list of apples, oranges, and pears."
+clj꞉koans.15-destructuring꞉> 
+"An OxforD comma list of apples, oranges, and pears."
+clj꞉koans.15-destructuring꞉> 
+true
+clj꞉koans.15-destructuring꞉> 
+("Rich" "Hickey" "The Clojurer" "Go Time" "Lambda Guru")
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:27:38).
+; Unable to resolve symbol: aliases in this context
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:27:38).
+; Unable to resolve symbol: aliases in this context
+clj꞉koans.15-destructuring꞉> 
+nil
+clj꞉koans.15-destructuring꞉> 
+#'koans.15-destructuring/test-address
+clj꞉koans.15-destructuring꞉> 
+{:original-parts ["Stephen" "Hawking"], :named-parts {:first "Stephen", :last "Hawking"}}
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:27:38).
+; Unable to resolve symbol: aliases in this context
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:27:8).
+; Unable to resolve symbol: first-name in this context
+clj꞉koans.15-destructuring꞉> 
+:fill-in-the-blank
+clj꞉koans.15-destructuring꞉> 
+"Rich"
+clj꞉koans.15-destructuring꞉> 
+"Hickey"
+clj꞉koans.15-destructuring꞉> 
+"RichHickey"
+clj꞉koans.15-destructuring꞉> 
+"Rich Hickey"
+clj꞉koans.15-destructuring꞉> 
+"[\"Test\" \"Testerson\"]{:street-address \"123 Test Lane\", :city \"Testerville\", :state \"TX\"}"
+clj꞉koans.15-destructuring꞉> 
+; Execution error (ExceptionInfo) at koans.15-destructuring/eval8078 (form-init9113500763307663729.clj:9).
+; Or in let expressions
+(= "Rich Hickey aka The Clojurer aka Go Time aka Lambda Guru" (let [[first-name last-name & aliases] (list "Rich" "Hickey" "The Clojurer" "Go Time" "Lambda Guru")] (str first-name " " last-name)))
+clj꞉koans.15-destructuring꞉> 
+true
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:25:38).
+; Unable to resolve symbol: aliases in this context
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:25:38).
+; Unable to resolve symbol: aliases in this context
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:25:38).
+; Unable to resolve symbol: aliases in this context
+clj꞉koans.15-destructuring꞉> 
+":bar:foo"
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:25:8).
+; Unable to resolve symbol: aliases in this context
+clj꞉koans.15-destructuring꞉> 
+; Execution error (ArityException) at koans.15-destructuring/eval8119 (form-init9113500763307663729.clj:25).
+; Wrong number of args (0) passed to: koans.15-destructuring/eval8119/fn--8120
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:25:8).
+; Unable to resolve symbol: aliases in this context
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:25:8).
+; Unable to resolve symbol: aliases in this context
+clj꞉koans.15-destructuring꞉> 
+; Execution error (ClassCastException) at koans.15-destructuring/eval8128 (form-init9113500763307663729.clj:25).
+; class clojure.lang.PersistentList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:1:7892).
+; Unable to resolve symbol: first-name in this context
+clj꞉koans.15-destructuring꞉> 
+("Rich" "Hickey" "The Clojurer" "Go Time" "Lambda Guru")
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:25:8).
+; Unable to resolve symbol: aliases in this context
+clj꞉koans.15-destructuring꞉> 
+#function[koans.15-destructuring/eval8134/fn--8135]
+clj꞉koans.15-destructuring꞉> 
+; Execution error (ArityException) at koans.15-destructuring/eval8138 (form-init9113500763307663729.clj:25).
+; Wrong number of args (1) passed to: koans.15-destructuring/eval8138/fn--8139
+clj꞉koans.15-destructuring꞉> 
+":bar:foo"
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:25:8).
+; Unable to resolve symbol: aliases in this context
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:25:8).
+; Unable to resolve symbol: aliases in this context
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:25:8).
+; Unable to resolve symbol: first-name in this context
+clj꞉koans.15-destructuring꞉> 
+true
+clj꞉koans.15-destructuring꞉> 
+"stublicjura"
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:24:8).
+; Unable to resolve symbol: first-name in this context
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:25:8).
+; Unable to resolve symbol: first-name in this context
+clj꞉koans.15-destructuring꞉> 
+"Rich"
+clj꞉koans.13-creating-functions꞉> 
+"RichHickey"
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:25:8).
+; Unable to resolve symbol: first-name in this context
+clj꞉koans.15-destructuring꞉> 
+"Rich Hickey"
+clj꞉koans.15-destructuring꞉> 
+"Rich Hickey(\"The Clojurer\" \"Go Time\" \"Lambda Guru\")"
+clj꞉koans.15-destructuring꞉> 
+"Rich HickeyThe ClojurerGo TimeLambda Guru"
+clj꞉koans.15-destructuring꞉> 
+false
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:25:38).
+; Unable to resolve symbol: aliases in this context
+clj꞉koans.15-destructuring꞉> 
+"Rich HickeyThe ClojurerGo TimeLambda Guru"
+clj꞉koans.15-destructuring꞉> 
+"Rich Hickey akaThe Clojurer akaGo TimeakaLambda Guru"
+clj꞉koans.15-destructuring꞉> 
+"Rich Hickey aka The Clojurer aka Go Time aka Lambda Guru"
+clj꞉koans.15-destructuring꞉> 
+; Execution error (ExceptionInfo) at koans.15-destructuring/eval8341 (form-init9113500763307663729.clj:9).
+; You can regain the full argument if you like arguing
+(= {:original-parts ["Stephen" "Hawking"], :named-parts {:first "Stephen", :last "Hawking"}} (let [[first-name last-name :as full-name] ["Stephen" "Hawking"]] __))
+clj꞉koans.15-destructuring꞉> 
+true
+clj꞉koans.15-destructuring꞉> 
+["Stephen" "Hawking"]
+clj꞉koans.15-destructuring꞉> 
+; Syntax error reading source at (REPL:30:18).
+; Map literal must contain an even number of forms
+clj꞉koans.15-destructuring꞉> 
+["Stephen" "Hawking"]
+clj꞉koans.15-destructuring꞉> 
+(nil nil)
+clj꞉koans.15-destructuring꞉> 
+{:original-parts ["Stephen" "Hawking"]}
+clj꞉koans.15-destructuring꞉> 
+{:first "Stephen", :last "Hawking"}
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:30:8).
+; Unable to resolve symbol: full-name in this context
+clj꞉koans.15-destructuring꞉> 
+{:first "Stephen", :last "Hawking"}
+clj꞉koans.15-destructuring꞉> 
+{:first "Stephen", :last "Hawking"}
+clj꞉koans.15-destructuring꞉> 
+:named-parts
+clj꞉koans.15-destructuring꞉> 
+{:original-parts ["Stephen" "Hawking"]}
+clj꞉koans.15-destructuring꞉> 
+"balls"
+clj꞉koans.15-destructuring꞉> 
+{:first "Stephen"}
+clj꞉koans.15-destructuring꞉> 
+{:original-parts ["Stephen" "Hawking"], :named-parts {:first "Stephen", :last "Hawking"}}
+clj꞉koans.15-destructuring꞉> 
+{:original-parts ["Stephen" "Hawking"], :named-parts {:first "Stephen", :last "Hawking"}}
+clj꞉koans.15-destructuring꞉> 
+true
+clj꞉koans.15-destructuring꞉> 
+#'koans.15-destructuring/test-address
+clj꞉koans.15-destructuring꞉> 
+"123 Test Lane"
+clj꞉koans.15-destructuring꞉> 
+"123 Test Lane Testerville TX"
+clj꞉koans.15-destructuring꞉> 
+true
+clj꞉koans.15-destructuring꞉> 
+"TX"
+clj꞉koans.15-destructuring꞉> 
+true
+clj꞉koans.15-destructuring꞉> 
+[Test Testerson] {:street-address 123 Test Lane, :city Testerville, :state TX}
+nil
+clj꞉koans.15-destructuring꞉> 
+{:street-address "123 Test Lane", :city "Testerville", :state "TX"}
+clj꞉koans.15-destructuring꞉> 
+#function[koans.15-destructuring/eval8447/fn--8448]
+clj꞉koans.15-destructuring꞉> 
+; Execution error (ArityException) at koans.15-destructuring/eval8451 (form-init9113500763307663729.clj:47).
+; Wrong number of args (2) passed to: koans.15-destructuring/eval8451/fn--8452
+clj꞉koans.15-destructuring꞉> 
+"[\"Test\" \"Testerson\"][:street-address \"123 Test Lane\"][:city \"Testerville\"][:state \"TX\"]"
+clj꞉koans.15-destructuring꞉> 
+; Syntax error macroexpanding clojure.core/let at (15_destructuring.clj:47:6).
+; "Test" - failed: simple-symbol? at: [:bindings :form :local-symbol] spec: :clojure.core.specs.alpha/local-name
+"Test" - failed: vector? at: [:bindings :form :seq-destructure] spec: :clojure.core.specs.alpha/seq-binding-form
+"Test" - failed: map? at: [:bindings :form :map-destructure] spec: :clojure.core.specs.alpha/map-bindings
+"Test" - failed: map? at: [:bindings :form :map-destructure] spec: :clojure.core.specs.alpha/map-special-binding
+clj꞉koans.15-destructuring꞉> 
+; Syntax error macroexpanding clojure.core/let at (15_destructuring.clj:47:6).
+; "Test" - failed: simple-symbol? at: [:bindings :form :local-symbol] spec: :clojure.core.specs.alpha/local-name
+"Test" - failed: vector? at: [:bindings :form :seq-destructure] spec: :clojure.core.specs.alpha/seq-binding-form
+"Test" - failed: map? at: [:bindings :form :map-destructure] spec: :clojure.core.specs.alpha/map-bindings
+"Test" - failed: map? at: [:bindings :form :map-destructure] spec: :clojure.core.specs.alpha/map-special-binding
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:47:6).
+; Unable to resolve symbol: %1 in this context
+clj꞉koans.15-destructuring꞉> 
+"[\"Test\" \"Testerson\"]{:street-address \"123 Test Lane\", :city \"Testerville\", :state \"TX\"}"
+clj꞉koans.15-destructuring꞉> 
+{:street-address "123 Test Lane", :city "Testerville", :state "TX"}
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:1:7892).
+; Unable to resolve symbol: street-address in this context
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:1:7892).
+; Unable to resolve symbol: street-address in this context
+clj꞉koans.15-destructuring꞉> 
+"123 Test Lane, Testerville, TX"
+clj꞉koans.15-destructuring꞉> 
+#function[koans.15-destructuring/eval8467/fn--8468]
+clj꞉koans.15-destructuring꞉> 
+; Syntax error compiling at (15_destructuring.clj:47:6).
+; Unable to resolve symbol: & in this context
+clj꞉koans.15-destructuring꞉> 
+; Error printing return value (IllegalArgumentException) at clojure.lang.APersistentVector/null (APersistentVector.java:294).
+; Key must be integer
+clj꞉koans.15-destructuring꞉> 
+; Execution error (ArityException) at koans.15-destructuring/eval8474 (form-init9113500763307663729.clj:47).
+; Wrong number of args (2) passed to: clojure.lang.PersistentVector
+clj꞉koans.15-destructuring꞉> 
